@@ -296,16 +296,16 @@ class _MyAppState extends State<MyApp> {
                     ),
                     items: <DropdownMenuItem<PrinterType>>[
                       if (Platform.isAndroid || Platform.isIOS)
-                        const DropdownMenuItem(
+                        DropdownMenuItem(
                           value: PrinterType.bluetooth,
                           child: Text("bluetooth"),
                         ),
                       if (Platform.isAndroid || Platform.isWindows)
-                        const DropdownMenuItem(
+                        DropdownMenuItem(
                           value: PrinterType.usb,
                           child: Text("usb"),
                         ),
-                      const DropdownMenuItem(
+                      DropdownMenuItem(
                         value: PrinterType.network,
                         child: Text("Wifi"),
                       ),
